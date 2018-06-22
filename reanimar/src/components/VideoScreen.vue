@@ -1,13 +1,13 @@
 <template lang='pug'>
-.hello
-  #video-bg
+.video-screen
+  .video-bg
     video(
       src='https://res.cloudinary.com/dza7f8g2e/video/upload/v1529635341/beach02.mp4'
       autoplay loop muted ref='videoEmbed'
       :class='videoElementClassList' @loadeddata='videoFadeIn()'
     )
 
-  #video-content
+  .video-content
     h1 {{ title }}
     p {{ caption }}
 
@@ -69,6 +69,7 @@ export default {
 <style scoped lang='sass'>
 $videoMaxOpacity: .75
 $videoTransitionSpeed: 600ms
+$videoOverlayFontColor: #0A0A0A
 
 =transformCenter
   position: absolute
@@ -84,10 +85,12 @@ $videoTransitionSpeed: 600ms
   min-width: 100%
   height: 100%
 
-#video-bg
+.video-screen, .video-bg
+  height: 100vh
+
+.video-bg
   position: absolute
   top: 0
-  height: 100vh
   width: 100vw
   overflow: hidden
   left: 0
@@ -101,16 +104,12 @@ $videoTransitionSpeed: 600ms
     &.show
       opacity: $videoMaxOpacity
 
-#video-content
+.video-content
   +transformCenter
 
   z-index: 2
-
   text-shadow: 0 0 10px #edededff
-  color: #121212F9
+  color: $videoOverlayFontColor
   font-weight: 600
-
-h1
-  font-size: 3em
 
 </style>

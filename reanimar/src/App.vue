@@ -11,14 +11,8 @@ export default {
 </script>
 
 <style lang='sass'>
-html, body
-  font-size: 28px
-
-h1, h2, h3, p
-  margin: 0
-
 #app
-  font-family: Roboto, Helvetica, Arial, sans-serif
+  font-size: 1.8em
   text-align: center
 
 </style>
