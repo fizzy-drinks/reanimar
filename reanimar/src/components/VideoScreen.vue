@@ -31,6 +31,7 @@ export default {
 
   mounted () {
     this.setVideoPlaybackRate()
+    this.detectWindowResizing()
   },
 
   methods: {
@@ -40,12 +41,26 @@ export default {
 
     setVideoPlaybackRate () {
       this.$refs.videoEmbed.playbackRate = this.videoPlaybackRate
+    },
+
+    adjustVideoSize () {
+      const video = this.$refs.videoEmbed
+      const videoAspect = video.videoWidth / video.videoHeight
+      const windowAspect = window.innerWidth / window.innerHeight
+
+      const shouldCropWidth = videoAspect > windowAspect
+      video.classList.add(shouldCropWidth ? 'crop-width' : 'crop-height')
+      video.classList.remove(shouldCropWidth ? 'crop-height' : 'crop-width')
+    },
+
+    detectWindowResizing () {
+      window.addEventListener('resize', this.adjustVideoSize)
     }
   },
 
   computed: {
     videoElementClassList () {
-      return { show: this.displayVideo }
+      return { show: this.displayVideo, 'crop-height': true }
     }
   }
 }
@@ -53,12 +68,21 @@ export default {
 
 <style scoped lang='sass'>
 $videoMaxOpacity: .75
+$videoTransitionSpeed: 600ms
 
-=absoluteCenter
+=transformCenter
   position: absolute
   top: 50%
   left: 50%
   transform: translate(-50%, -50%)
+
+.crop-height
+  min-height: 100%
+  width: 100%
+
+.crop-width
+  min-width: 100%
+  height: 100%
 
 #video-bg
   position: absolute
@@ -70,17 +94,15 @@ $videoMaxOpacity: .75
   background: #000
 
   video
-    +absoluteCenter
-    min-height: 100%
-    width: 100%
+    +transformCenter
     opacity: 0
-    transition: 600ms opacity 200ms
+    transition: $videoTransitionSpeed opacity 200ms
 
     &.show
       opacity: $videoMaxOpacity
 
 #video-content
-  +absoluteCenter
+  +transformCenter
 
   z-index: 2
 
