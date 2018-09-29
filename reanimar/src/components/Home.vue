@@ -17,9 +17,9 @@ export default {
   components: { VideoScreen, TitleScreen },
   mixins: [PageScroller],
   created () {
-    this.actOneTitle = 'Ato I: O Problema'
-    this.actTwoTitle = 'Ato II: As Causas'
-    this.actThreeTitle = 'Ato III: A Solução'
+    this.actOneTitle = 'O Problema'
+    this.actTwoTitle = 'As Causas'
+    this.actThreeTitle = 'A Solução'
   },
   mounted () {
     window.addEventListener('keydown', event => {
