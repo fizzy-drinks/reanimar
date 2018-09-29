@@ -9,3 +9,11 @@ export default {
   props: ['title']
 }
 </script>
+
+<style lang='sass' scoped>
+@import ../transform-center-mixin
+
+h2
+  +transformCenter
+
+</style>

@@ -67,15 +67,11 @@ export default {
 </script>
 
 <style scoped lang='sass'>
+@import ../transform-center-mixin
+
 $videoMaxOpacity: .9
 $videoTransitionSpeed: 600ms
 $videoOverlayFontColor: #0A0A0A
-
-=transformCenter
-  position: absolute
-  top: 50%
-  left: 50%
-  transform: translate(-50%, -50%)
 
 .crop-height
   min-height: 100%
