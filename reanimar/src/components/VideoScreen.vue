@@ -67,7 +67,7 @@ export default {
 </script>
 
 <style scoped lang='sass'>
-$videoMaxOpacity: .75
+$videoMaxOpacity: .9
 $videoTransitionSpeed: 600ms
 $videoOverlayFontColor: #0A0A0A
 
@@ -83,7 +83,7 @@ $videoOverlayFontColor: #0A0A0A
 
 .crop-width
   min-width: 100%
-  height: 100%
+  height: 100vh
 
 .video-screen, .video-bg
   height: 100vh
