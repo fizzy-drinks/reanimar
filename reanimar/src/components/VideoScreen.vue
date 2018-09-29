@@ -1,5 +1,5 @@
 <template lang='pug'>
-.video-screen
+.video.screen
   .video-bg
     video(
       src='https://res.cloudinary.com/dza7f8g2e/video/upload/v1529635341/beach02.mp4'
@@ -85,7 +85,7 @@ $videoOverlayFontColor: #0A0A0A
   min-width: 100%
   height: 100vh
 
-.video-screen, .video-bg
+.video-bg
   height: 100vh
 
 .video-bg
