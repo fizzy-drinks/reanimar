@@ -1,11 +1,6 @@
 <template lang='pug'>
-.video.screen
-  .video-bg
-    video(
-      src='https://res.cloudinary.com/dza7f8g2e/video/upload/v1529635341/beach02.mp4'
-      autoplay loop muted ref='videoEmbed'
-      :class='videoElementClassList' @loadeddata='videoFadeIn()'
-    )
+.video
+  title-screen(:bg='titleImage')
 
   .video-content
     h1 {{ title }}
@@ -14,54 +9,15 @@
 </template>
 
 <script>
+import TitleScreen from './TitleScreen'
+
 export default {
   name: 'VideoScreen',
-
+  components: { TitleScreen },
   created () {
     this.title = 'Reanimar'
     this.caption = 'Um ensaio sobre a vida marinha.'
-    this.videoPlaybackRate = 0.5
-  },
-
-  data () {
-    return {
-      displayVideo: false
-    }
-  },
-
-  mounted () {
-    this.setVideoPlaybackRate()
-    this.detectWindowResizing()
-  },
-
-  methods: {
-    videoFadeIn () {
-      this.displayVideo = true
-    },
-
-    setVideoPlaybackRate () {
-      this.$refs.videoEmbed.playbackRate = this.videoPlaybackRate
-    },
-
-    adjustVideoSize () {
-      const video = this.$refs.videoEmbed
-      const videoAspect = video.videoWidth / video.videoHeight
-      const windowAspect = window.innerWidth / window.innerHeight
-
-      const shouldCropWidth = videoAspect > windowAspect
-      video.classList.add(shouldCropWidth ? 'crop-width' : 'crop-height')
-      video.classList.remove(shouldCropWidth ? 'crop-height' : 'crop-width')
-    },
-
-    detectWindowResizing () {
-      window.addEventListener('resize', this.adjustVideoSize)
-    }
-  },
-
-  computed: {
-    videoElementClassList () {
-      return { show: this.displayVideo, 'crop-height': true }
-    }
+    this.titleImage = require('../../static/title.jpg')
   }
 }
 </script>
@@ -86,10 +42,8 @@ $videoOverlayFontColor: #0A0A0A
 
 .video-bg
   position: absolute
-  top: 0
   width: 100vw
   overflow: hidden
-  left: 0
   background: #000
 
   video

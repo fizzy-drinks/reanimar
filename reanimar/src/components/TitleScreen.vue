@@ -1,14 +1,17 @@
 <template lang='pug'>
-section.screen
-  .video-bg(v-if='bg')
-    img(:src='bg')
+section.screen(:style='image')
   h2 {{ title }}
 </template>
 
 <script>
 export default {
   name: 'TitleScreen',
-  props: ['title', 'bg']
+  props: ['title', 'bg'],
+  computed: {
+    image () {
+      return `background-image: url(${this.bg})`
+    }
+  }
 }
 </script>
 
@@ -17,11 +20,8 @@ export default {
 
 .screen
   background-color: black
-  text-shadow: 0 0 10px #ededed20
-
-  img
-    +transformCenter
-    filter: grayscale(50%)
+  background-position: center
+  background-size: cover
 
 h2
   +transformCenter
