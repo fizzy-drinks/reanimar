@@ -1,7 +1,7 @@
 <template lang="pug">
 .home
   video-screen
-  title-screen(:title='actOneTitle')
+  title-screen(:title='actOneTitle' :bg='require("../../static/act_i.jpg")')
   title-screen(:title='actTwoTitle')
   title-screen(:title='actThreeTitle')
 
@@ -17,7 +17,7 @@ export default {
   components: { VideoScreen, TitleScreen },
   mixins: [PageScroller],
   created () {
-    this.actOneTitle = 'O Problema'
+    this.actOneTitle = 'I: Mortalidade e impacto'
     this.actTwoTitle = 'As Causas'
     this.actThreeTitle = 'A Solução'
   },
