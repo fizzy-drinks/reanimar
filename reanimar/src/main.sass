@@ -3,6 +3,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab')
 
+@import ./transform-center-mixin
+
 html
   line-height: 150%
   font-family: 'Roboto', sans-serif
@@ -23,6 +25,9 @@ h1, h2, h3
   height: 100vh
   position: relative
   overflow: hidden
+  background-color: black
+  background-position: center
+  background-size: cover
 
   > *
     position: absolute
@@ -37,3 +42,13 @@ h1, h2, h3
 .crop-width
   min-width: 100%
   height: 100vh
+
+.centered
+  +transformCenter
+  color: #dfdfdf
+  text-shadow: 1px 1px 20px #0009
+  width: 100%
+
+  h2
+    text-transform: uppercase
+    font-weight: bold

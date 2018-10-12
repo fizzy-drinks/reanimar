@@ -20,23 +20,3 @@ export default {
   }
 }
 </script>
-
-<style lang='sass' scoped>
-@import ../transform-center-mixin
-
-.screen
-  background-color: black
-  background-position: center
-  background-size: cover
-
-.centered
-  +transformCenter
-  color: #dfdfdf
-  text-shadow: 1px 1px 20px #0009
-  width: 100%
-
-  h2
-    text-transform: uppercase
-    font-weight: bold
-
-</style>

@@ -1,0 +1,15 @@
+actOne:
+  title: 'I: Mortalidade e Impacto'
+  caption: O que acontece nas praias paulistas
+
+  frames:
+    -
+      title: Mais de 3.500 animais marinhos
+      text:
+        - Esse é o número de animais que foram encontrados nas praias de São Paulo entre agosto de 2016 e agosto de 2017.
+
+actTwo:
+  title: 'II: As Causas'
+
+actThree:
+  title: 'III: A Solução'
