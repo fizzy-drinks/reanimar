@@ -6,7 +6,12 @@
     :caption='text.actOne.caption'
     :bg='require("../../static/act_i.jpg")'
   )
-  text-screen(:title='text.actOne.frames[0].title' :text='text.actOne.frames[0].text')
+  text-screen(
+    v-for='(frame, i) in text.actOne.frames'
+    :key='i'
+    :title='frame.title'
+    :text='frame.text'
+  )
 
   title-screen(:title='text.actTwo.title')
   title-screen(:title='text.actThree.title')
