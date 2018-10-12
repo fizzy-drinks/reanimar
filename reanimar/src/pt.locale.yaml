@@ -18,17 +18,22 @@ actOne:
       content:
         -
           chart:
-            type: BarChart
+            type: ColumnChart
             options:
+              fontName: Roboto
+              height: 540
+              isStacked: true
               title: Animais encontrados na Baixada Santista (Ago/2016-Ago/2017)
-              chartArea:
-                width: 50%
-              colors: [red, green, blue]
+              colors: ['#f88', '#8af']
+              series:
+                -
+                  annotations:
+                    labelInLegend: hey
             data:
-              - [Classe, Quantidade de ocorrências (%)]
-              - [Répteis, 50]
-              - [Mamíferos, 42]
-              - [Aves, 8]
+              - [Classe, Mortos, Vivos]
+              - [Répteis, 1749, 157]
+              - [Aves, 1294, 63]
+              - [Mamíferos, 297, 1]
 
 actTwo:
   title: 'II: As Causas'
