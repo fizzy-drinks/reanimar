@@ -2,7 +2,8 @@
 section.screen
   .centered
     h2 {{ title }}
-    p(v-for='(t, i) in text' :key='i' v-html='md(t)')
+    div(v-for='(section, i) in content' :key='i')
+      p(v-if='section.text' v-html='md(section.text)')
 </template>
 
 <script>
@@ -10,7 +11,7 @@ import { markdown } from 'markdown'
 
 export default {
   name: 'TextScreen',
-  props: ['title', 'text'],
+  props: ['title', 'content'],
   methods: {
     md (text) {
       return markdown.toHTML(text)

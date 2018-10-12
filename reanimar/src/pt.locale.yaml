@@ -5,9 +5,13 @@ actOne:
   frames:
     -
       title: Mais de 3.500 animais marinhos
-      text:
-        - Esse é o número de animais que foram encontrados nas praias de São Paulo entre agosto de 2016 e agosto de 2017. Isso significa que, para cada humano que morre no mar, 64 animais marinhos morrem em terra entre Cananéia e Ubatuba.
-        - Segundo [uma reportagem do jornal *A Tribuna*](http://www.atribuna.com.br/noticias/noticias-detalhe/cidades/baixada-e-a-terceira-regiao-do-estado-com-maior-numero-de-afogamentos/?cHash=103be7de497e8f2669fb8bb71bb34120), 752 pessoas morreram afogadas no Litoral Paulista em 2015. Se humanos morressem no mar com a mesma frequência que animais marinhos morrem nas praias, seriam 48.128 mortos, ou 26 furacões Katrina.
+      content:
+        - text: Esse é o número de animais que foram encontrados nas praias de São Paulo entre agosto de 2016 e agosto de 2017. Isso significa que, para cada humano que morre no mar, 64 animais marinhos morrem em terra entre Cananéia e Ubatuba.
+        - text: Segundo [uma reportagem do jornal *A Tribuna*](http://www.atribuna.com.br/noticias/noticias-detalhe/cidades/baixada-e-a-terceira-regiao-do-estado-com-maior-numero-de-afogamentos/?cHash=103be7de497e8f2669fb8bb71bb34120), 752 pessoas morreram afogadas no Litoral Paulista em 2015. Se humanos morressem no mar com a mesma frequência que animais marinhos morrem nas praias, seriam 48.128 mortos - o equivalente a 26 furacões Katrina ou 16 furacões Maria.
+    -
+      title: Os animais mais encontrados
+      content:
+        - text: (infográfico - % de cada espécie)
 
 actTwo:
   title: 'II: As Causas'

@@ -10,7 +10,7 @@
     v-for='(frame, i) in text.actOne.frames'
     :key='i'
     :title='frame.title'
-    :text='frame.text'
+    :content='frame.content'
   )
 
   title-screen(:title='text.actTwo.title')
