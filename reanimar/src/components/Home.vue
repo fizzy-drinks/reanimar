@@ -9,8 +9,7 @@
   text-screen(
     v-for='(frame, i) in text.actOne.frames'
     :key='i'
-    :title='frame.title'
-    :content='frame.content'
+    :chapter='frame'
   )
 
   title-screen(:title='text.actTwo.title')
