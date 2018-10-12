@@ -2,7 +2,7 @@
 section.screen(:style='image')
   .centered
     h2 {{ title }}
-    p {{ caption }}
+    p.caption {{ caption }}
 </template>
 
 <script>
