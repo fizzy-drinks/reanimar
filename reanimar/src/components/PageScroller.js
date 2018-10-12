@@ -1,23 +1,18 @@
 export default {
   methods: {
     scrollPage (dir) {
-      if (dir === 'down') {
-        const scrollAmt = Math.min(window.scrollY + window.innerHeight, document.body.offsetHeight)
-        console.log(scrollAmt)
-        window.scroll({
-          top: scrollAmt,
-          left: 0,
-          behavior: 'smooth'
-        })
-      } else if (dir === 'up') {
-        const scrollAmt = Math.max(window.scrollY - window.innerHeight, 0)
-        console.log(scrollAmt)
-        window.scrollTo({
-          top: scrollAmt,
-          left: 0,
-          behavior: 'smooth'
-        })
-      }
+      const screensTraveled = window.scrollY / window.innerHeight
+      const maxScreens = (document.body.scrollHeight / window.innerHeight) - 1
+      const currentScreen = Math.floor(screensTraveled)
+      const dest =
+        dir === 'up'
+          ? Math.max(currentScreen - 1, 0)
+          : Math.min(currentScreen + 1, maxScreens)
+      window.scrollTo({
+        top: dest * window.innerHeight,
+        left: 0,
+        behavior: 'smooth'
+      })
     }
   }
 }
