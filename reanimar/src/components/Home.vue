@@ -18,8 +18,8 @@ export default {
   mixins: [PageScroller],
   created () {
     this.actOneTitle = 'I: Mortalidade e impacto'
-    this.actTwoTitle = 'As Causas'
-    this.actThreeTitle = 'A Solução'
+    this.actTwoTitle = 'II: As Causas'
+    this.actThreeTitle = 'III: A Solução'
   },
   mounted () {
     window.addEventListener('keydown', event => {

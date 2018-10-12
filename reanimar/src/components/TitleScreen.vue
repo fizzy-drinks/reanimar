@@ -29,5 +29,6 @@ h2
   font-weight: bold
   color: #dfdfdf
   text-shadow: 1px 1px 20px #0009
+  width: 100%
 
 </style>
