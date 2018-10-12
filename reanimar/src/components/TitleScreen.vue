@@ -1,12 +1,18 @@
 <template lang='pug'>
 section.screen(:style='image')
-  h2 {{ title }}
+  .centered
+    h2 {{ title }}
+    p {{ caption }}
 </template>
 
 <script>
 export default {
   name: 'TitleScreen',
-  props: ['title', 'bg'],
+  props: {
+    title: { default: '' },
+    bg: { default: '' },
+    caption: { default: '' }
+  },
   computed: {
     image () {
       return `background-image: url(${this.bg})`
@@ -23,12 +29,14 @@ export default {
   background-position: center
   background-size: cover
 
-h2
+.centered
   +transformCenter
-  text-transform: uppercase
-  font-weight: bold
   color: #dfdfdf
   text-shadow: 1px 1px 20px #0009
   width: 100%
+
+  h2
+    text-transform: uppercase
+    font-weight: bold
 
 </style>
