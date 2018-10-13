@@ -12,7 +12,7 @@ actOne:
         - text: Esse é o número de animais que foram encontrados nas praias de São Paulo entre agosto de 2016 e agosto de 2017. Isso significa que, para cada humano que morre no mar, 64 animais marinhos morrem em terra entre Cananéia e Ubatuba.
         - text: Segundo [uma reportagem do jornal *A Tribuna*](http://www.atribuna.com.br/noticias/noticias-detalhe/cidades/baixada-e-a-terceira-regiao-do-estado-com-maior-numero-de-afogamentos/?cHash=103be7de497e8f2669fb8bb71bb34120), 752 pessoas morreram afogadas no Litoral Paulista em 2015. Se humanos morressem no mar com a mesma frequência que animais marinhos morrem nas praias, seriam 48.128 mortos - o equivalente a 26 furacões Katrina ou 16 furacões Maria.
     -
-      title: Os animais mais encontrados
+      title: Os animais encontrados
       style:
         bgColor: white
       content:
@@ -23,17 +23,31 @@ actOne:
               fontName: Roboto
               height: 540
               isStacked: true
-              title: Animais encontrados na Baixada Santista (Ago/2016-Ago/2017)
+              title: Animais encontrados no litoral de São Paulo (Ago/2016-Ago/2017)
               colors: ['#f88', '#8af']
-              series:
-                -
-                  annotations:
-                    labelInLegend: hey
             data:
               - [Classe, Mortos, Vivos]
-              - [Répteis, 1749, 157]
-              - [Aves, 1294, 63]
-              - [Mamíferos, 297, 1]
+              - ["Répteis (tartarugas)", 1749, 157]
+              - ["Aves (albatrozes e pinguins)", 1294, 63]
+              - ["Mamíferos (golfinhos, baleias e botos)", 297, 1]
+    -
+      title: Os animais encontrados
+      style:
+        bgColor: white
+      content:
+        -
+          chart:
+            type: ColumnChart
+            options:
+              fontName: Roboto
+              height: 540
+              isStacked: percent
+              title: Distribuição dos animais encontrados
+            data:
+              - [Classe, Vale do Paraíba, Baixada Santista, Litoral Sul]
+              - ["Aves (albatrozes e pinguins)", 0.00584, 0.01025, 0.01411]
+              - ["Répteis (tartarugas)", 0.01613, 0.02178, 0.01924]
+              - ["Mamíferos (golfinhos, baleias e botos)", 0.00118, 0.00153, 0.0022]
 
 actTwo:
   title: 'II: As Causas'
