@@ -10,12 +10,7 @@ section.screen(:style='image' :class='{ clickable: !!linkTo }' @click='go')
 <script>
 export default {
   name: 'TitleScreen',
-  props: {
-    title: { default: '' },
-    bg: { default: '' },
-    caption: { default: '' },
-    linkTo: { default: '' }
-  },
+  props: ['title', 'bg', 'caption', 'linkTo'],
   computed: {
     image () {
       return `background-image: url(${this.bg})`

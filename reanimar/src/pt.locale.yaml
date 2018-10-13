@@ -5,6 +5,9 @@ standardStyles:
     bgColor: black
     color: '#dfdfdf'
 
+appTitle: Reanimar
+appCaption: Um ensaio sobre a vida marinha.
+
 actOne:
   title: 'I: Mortalidade e Impacto'
   caption: O que acontece nas praias paulistas
