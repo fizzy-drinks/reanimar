@@ -3,6 +3,8 @@ section.screen.clickable(:style='image' @click='go')
   .centered
     h2 {{ title }}
     p.caption {{ caption }}
+  .righted
+    fa-icon(icon='angle-right' size='3x')
 </template>
 
 <script>
@@ -27,7 +29,18 @@ export default {
 }
 </script>
 
-<style lang='sass'>
-.centered
+<style lang='sass' scoped>
+.screen
   color: white
+
+@keyframes point
+  0%
+    padding-right: 0
+  50%
+    padding-right: .25em
+  100%
+    padding-right: 0
+
+.righted
+  animation: point .5s linear infinite
 </style>
