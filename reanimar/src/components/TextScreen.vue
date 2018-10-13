@@ -44,7 +44,6 @@ export default {
       return this.chapter.style || {}
     },
     customStyle () {
-      console.log(this.style)
       return `
         background-color: ${this.style.bgColor || 'transparent'};
         color: ${this.style.color || 'inherit'}

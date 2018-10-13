@@ -18,6 +18,7 @@ export default {
   },
   methods: {
     go () {
+      if (!this.linkTo) return
       this.$router.push(this.linkTo)
       window.scrollTo({ top: 0, left: 0 })
     }
