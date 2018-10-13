@@ -45,7 +45,7 @@ actOne:
               fontName: Roboto
               height: 540
               isStacked: percent
-              title: Distribuição dos animais encontrados
+              title: Animais encontrados por quilômetro monitorado no Estado de São Paulo
             data:
               - [Classe, Vale do Paraíba, Baixada Santista, Litoral Sul]
               - ["Aves (albatrozes e pinguins)", 0.00584, 0.01025, 0.01411]
