@@ -5,11 +5,7 @@
     :title='text.actOne.title'
     :caption='text.actOne.caption'
     :bg='require("../../static/act_i.jpg")'
-  )
-  text-screen(
-    v-for='(frame, i) in text.actOne.frames'
-    :key='i'
-    :chapter='frame'
+    linkTo='/problema'
   )
 
   title-screen(:title='text.actTwo.title')
@@ -21,23 +17,11 @@
 import VideoScreen from './VideoScreen'
 import TitleScreen from './TitleScreen'
 import TextScreen from './TextScreen'
-import PageScroller from './PageScroller'
 import TextManager from './TextManager'
 
 export default {
   name: 'Home',
-  components: { VideoScreen, TitleScreen, TextScreen },
-  mixins: [PageScroller, TextManager],
-  mounted () {
-    window.addEventListener('keydown', event => {
-      if (!event.key.match(/arrow/i)) return
-      event.preventDefault()
-      if (['ArrowDown', 'ArrowRight'].includes(event.key)) {
-        this.scrollPage('down')
-      } else {
-        this.scrollPage('up')
-      }
-    })
-  }
+  mixins: [TextManager],
+  components: { VideoScreen, TitleScreen, TextScreen }
 }
 </script>
