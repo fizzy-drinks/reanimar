@@ -1,20 +1,24 @@
+standardStyles:
+  white: &style.white
+    bgColor: white
+  black: &style.black
+    bgColor: black
+    color: '#dfdfdf'
+
 actOne:
   title: 'I: Mortalidade e Impacto'
   caption: O que acontece nas praias paulistas
 
   frames:
     -
-      style:
-        bgColor: black
-        color: '#dfdfdf'
+      style: *style.black
       title: Mais de 3.500 animais marinhos
       content:
         - text: Esse é o número de animais que foram encontrados nas praias de São Paulo entre agosto de 2016 e agosto de 2017. Isso significa que, para cada humano que morre no mar, 64 animais marinhos morrem em terra entre Cananéia e Ubatuba.
         - text: Segundo [uma reportagem do jornal *A Tribuna*](http://www.atribuna.com.br/noticias/noticias-detalhe/cidades/baixada-e-a-terceira-regiao-do-estado-com-maior-numero-de-afogamentos/?cHash=103be7de497e8f2669fb8bb71bb34120), 752 pessoas morreram afogadas no Litoral Paulista em 2015. Se humanos morressem no mar com a mesma frequência que animais marinhos morrem nas praias, seriam 48.128 mortos - o equivalente a 26 furacões Katrina ou 16 furacões Maria.
     -
       title: Os animais encontrados
-      style:
-        bgColor: white
+      style: *style.white
       content:
         -
           chart:
@@ -32,8 +36,7 @@ actOne:
               - ["Mamíferos (golfinhos, baleias e botos)", 297, 1]
     -
       title: Os animais encontrados
-      style:
-        bgColor: white
+      style: *style.white
       content:
         -
           chart:
