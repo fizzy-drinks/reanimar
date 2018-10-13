@@ -1,9 +1,9 @@
 <template lang='pug'>
-section.screen.clickable(:style='image' @click='go')
+section.screen(:style='image' :class='{ clickable: !!linkTo }' @click='go')
   .centered
     h2 {{ title }}
     p.caption {{ caption }}
-  .righted
+  .righted(v-if='!!linkTo')
     fa-icon(icon='angle-right' size='3x')
 </template>
 
@@ -14,7 +14,7 @@ export default {
     title: { default: '' },
     bg: { default: '' },
     caption: { default: '' },
-    linkTo: { default: '/' }
+    linkTo: { default: '' }
   },
   computed: {
     image () {
@@ -23,7 +23,8 @@ export default {
   },
   methods: {
     go () {
-      this.$router.push('/problema')
+      this.$router.push(this.linkTo)
+      window.scrollTo({ top: 0, left: 0 })
     }
   }
 }
