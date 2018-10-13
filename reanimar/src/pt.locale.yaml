@@ -40,7 +40,7 @@ actOne:
       content:
         -
           chart:
-            type: ColumnChart
+            type: BarChart
             options:
               fontName: Roboto
               height: 540
