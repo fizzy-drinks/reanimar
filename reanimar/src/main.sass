@@ -3,8 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab')
 
-@import ./transform-center-mixin
-
 html
   line-height: 150%
   font-family: 'Roboto', sans-serif
@@ -31,18 +29,16 @@ h1, h2, h3
   font-family: 'Roboto Slab', serif
 
 .screen
-  height: 100vh
+  min-height: 100vh
   position: relative
-  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
   background-color: black
   background-position: center
   background-size: cover
-
-  > *
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
+  width: 100%
+  padding: 1vh 1vw
 
 .crop-height
   min-height: 100%
@@ -53,12 +49,11 @@ h1, h2, h3
   height: 100vh
 
 .righted
-  +transformCenter
   text-align: right
-  width: 90%
+  position: absolute
+  right: 2vw
 
 .centered
-  +transformCenter
   width: 80%
 
   h2

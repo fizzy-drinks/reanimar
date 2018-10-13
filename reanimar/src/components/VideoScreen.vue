@@ -1,10 +1,6 @@
 <template lang='pug'>
 .video
-  title-screen(:bg='titleImage')
-
-  .video-content
-    h1 {{ title }}
-    p {{ caption }}
+  title-screen(:bg='titleImage' :title='title' :caption='caption')
 
 </template>
 
@@ -23,8 +19,6 @@ export default {
 </script>
 
 <style scoped lang='sass'>
-@import ../transform-center-mixin
-
 $videoMaxOpacity: .9
 $videoTransitionSpeed: 600ms
 $videoOverlayFontColor: #0A0A0A
@@ -47,7 +41,6 @@ $videoOverlayFontColor: #0A0A0A
   background: #000
 
   video
-    +transformCenter
     opacity: 0
     transition: $videoTransitionSpeed opacity 200ms
 
@@ -55,8 +48,6 @@ $videoOverlayFontColor: #0A0A0A
       opacity: $videoMaxOpacity
 
 .video-content
-  +transformCenter
-
   z-index: 2
   text-shadow: 0 0 10px #edededff
   color: $videoOverlayFontColor
