@@ -17,28 +17,21 @@ section.screen(:style='customStyle')
         :data='section.chart.data'
         :options='section.chart.options'
       )
+      leaflet-map(v-if='section.map' :map='section.map')
 </template>
 
 <script>
 import { GChart as GoogleChart } from 'vue-google-charts'
-import { markdown } from 'markdown'
 
 import YoutubeVideo from './YoutubeVideo'
+import LeafletMap from './LeafletMap'
+import MarkdownParser from './MarkdownParser'
 
 export default {
   name: 'TextScreen',
-  components: { YoutubeVideo, GoogleChart },
+  mixins: [MarkdownParser],
+  components: { YoutubeVideo, GoogleChart, LeafletMap },
   props: ['chapter'],
-  data () {
-    return {
-      chartData: [
-        ['Food', 'Temperature'],
-        ['Burrito', 2000],
-        ['Common dish', 30],
-        ['Sushi', 10]
-      ]
-    }
-  },
   computed: {
     style () {
       return this.chapter.style || {}
@@ -48,11 +41,6 @@ export default {
         background-color: ${this.style.bgColor || 'transparent'};
         color: ${this.style.color || 'inherit'}
       `
-    }
-  },
-  methods: {
-    md (text) {
-      return markdown.toHTML(text)
     }
   }
 }
