@@ -20,6 +20,8 @@ l-map(
     :key='i'
     :lat-lng='L.latLng(...circle.position)'
     :radius='circle.size * 10'
+    :color='circle.color || "darkorange"'
+    :fillColor='circle.fill || "darkorange"'
   )
     l-popup(:content='md(circle.popupText)')
 </template>
@@ -39,7 +41,7 @@ export default {
     return {
       /* eslint-disable no-undef */
       L,
-      openMapUrl: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+      openMapUrl: 'http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
       openMapAttribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }
   }
