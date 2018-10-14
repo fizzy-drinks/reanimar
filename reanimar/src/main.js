@@ -8,8 +8,7 @@ import router from './router'
 
 import './main.sass'
 
-library.add(faAngleRight)
-library.add(faArrowLeft)
+library.add(faAngleRight, faArrowLeft)
 
 Vue.component('fa-icon', FontAwesomeIcon)
 
