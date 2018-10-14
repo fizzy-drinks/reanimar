@@ -17,8 +17,8 @@ standardCoords:
   Itanhaém: &coords.Itanhaém [-24.1817, -46.785]
   Mongaguá: &coords.Mongaguá [-24.1075, -46.6802]
   PraiaGrande: &coords.PraiaGrande [-24.02, -46.45]
-  SãoVicente: &coords.SãoVicente [-23.963, -46.3918]
-  Santos: &coords.Santos [-23.9618, -46.3322]
+  SãoVicente: &coords.SãoVicente [-23.97, -46.37]
+  Santos: &coords.Santos [-23.97, -46.32]
   Guarujá: &coords.Guarujá [-23.9948, -46.2569]
   Bertioga: &coords.Bertioga [-23.8156, -46.0373]
   SãoSebastião: &coords.SãoSebastião [-23.8064, -45.4017]
@@ -57,6 +57,8 @@ actOne:
               - ["Répteis (tartarugas)", 1749, 157]
               - ["Aves (albatrozes e pinguins)", 1294, 63]
               - ["Mamíferos (golfinhos, baleias e botos)", 297, 1]
+
+    # PMP 17
     -
       title: Os animais encontrados
       style: *style.white
@@ -67,19 +69,21 @@ actOne:
             options:
               fontName: Roboto
               height: 540
-              isStacked: percent
               title: Animais encontrados por quilômetro monitorado no Estado de São Paulo
             data:
-              - [Classe, Vale do Paraíba, Baixada Santista, Litoral Sul]
-              - ["Aves (albatrozes e pinguins)", 0.00584, 0.01025, 0.01411]
+              - [Classe, Vale do Paraíba, Região Metropolitana, Litoral Sul]
               - ["Répteis (tartarugas)", 0.01613, 0.02178, 0.01924]
+              - ["Aves (albatrozes e pinguins)", 0.00584, 0.01025, 0.01411]
               - ["Mamíferos (golfinhos, baleias e botos)", 0.00118, 0.00153, 0.0022]
+              - [Total, 0.02314, 0.03321, 0.03555]
     -
       title: O monitoramento das praias
       content:
         -
           text: Rodrigo Valle, coordenador do Instituto Biopesca, comenta o processo de monitoramento das praias
           audio: none for now
+
+    # Atualizado PMP 18
     - title: Volume de ocorrências por cidade
       content:
         -
@@ -193,8 +197,34 @@ actOne:
                   Ocorrências: 773
                 size: 773
 
+    -
+      title: As causas
+      style:
+        bgColor: '#dfdfdf'
+      content:
+        -
+          iconText:
+            text: O plástico descartado irregularmente por pessoas nas praias
+            icon: https://www.shareicon.net/download/2015/12/31/695793_drink_512x512.png
+            iconBgColor: '#88ff88'
+        -
+          iconText:
+            text: A pesca, principalmente em alto mar
+            iconBgColor: '#88aaff'
+            icon: http://cdn.onlinewebfonts.com/svg/img_498281.png
+        -
+          iconText:
+            text: Derramamentos de óleo e produtos químicos de embarcações
+            iconBgColor: '#ffff88'
+            icon: https://static.thenounproject.com/png/375-200.png
+        -
+          iconText:
+            text: As mudanças climáticas e as correntes dos oceanos
+            iconBgColor: '#ffaa88'
+            icon: https://www.iconspng.com/uploads/sun-icon/sun-icon.png
+
 actTwo:
-  title: 'II: As Causas'
+  title: 'II: Os Culpados'
 
 actThree:
   title: 'III: A Solução'

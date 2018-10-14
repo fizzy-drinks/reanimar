@@ -3,6 +3,10 @@ section.screen(:style='customStyle')
   .centered
     h2 {{ chapter.title }}
     div(v-for='(section, i) in chapter.content' :key='i')
+      .flex(v-if='section.iconText')
+        .icon(:style='{ backgroundColor: section.iconText.iconBgColor || "white" }')
+          img(:src='section.iconText.icon')
+        p {{ section.iconText.text }}
       img(
         v-if='section.picture'
         :alt='section.picture.alt'
