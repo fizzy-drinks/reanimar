@@ -9,16 +9,19 @@
 
   div(v-if='command' style='position: fixed; top: 5vh; left: 0; width: 100%')
     input(style='display: block; margin: 0 auto; width: 15em' v-model='command')
+
+  back-button
 </template>
 
 <script>
 import TextManager from './TextManager'
 import TextScreen from './TextScreen'
+import BackButton from './BackButton'
 
 export default {
   name: 'ActOne',
   mixins: [TextManager],
-  components: { TextScreen },
+  components: { TextScreen, BackButton },
   data () {
     return {
       currentPage: 0,
