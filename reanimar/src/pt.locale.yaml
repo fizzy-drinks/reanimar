@@ -5,6 +5,27 @@ standardStyles:
     bgColor: black
     color: '#dfdfdf'
 
+standardCoords:
+  Litoral: &coords.Litoral
+    lat: -24.2
+    lng: -46
+    zoom: 8
+  Cananéia: &coords.Cananéia [-25.0244, -47.9323]
+  IlhaComprida: &coords.IlhaComprida [-24.7462, -47.5507]
+  Iguape: &coords.Iguape [-24.7098, -47.5566]
+  Peruíbe: &coords.Peruíbe [-24.3173, -46.9956]
+  Itanhaém: &coords.Itanhaém [-24.1817, -46.785]
+  Mongaguá: &coords.Mongaguá [-24.1075, -46.6802]
+  PraiaGrande: &coords.PraiaGrande [-24.02, -46.45]
+  SãoVicente: &coords.SãoVicente [-23.963, -46.3918]
+  Santos: &coords.Santos [-23.9618, -46.3322]
+  Guarujá: &coords.Guarujá [-23.9948, -46.2569]
+  Bertioga: &coords.Bertioga [-23.8156, -46.0373]
+  SãoSebastião: &coords.SãoSebastião [-23.8064, -45.4017]
+  Ilhabela: &coords.Ilhabela [-23.779, -45.3557]
+  Caraguatatuba: &coords.Caraguatatuba [-23.6255, -45.4241]
+  Ubatuba: &coords.Ubatuba [-23.3714, -45.0187]
+
 appTitle: Reanimar
 appCaption: Um ensaio sobre a vida marinha.
 
@@ -60,6 +81,118 @@ actOne:
         -
           text: Rodrigo Valle, coordenador do Instituto Biopesca, comenta o processo de monitoramento das praias
           audio: none for now
+    - title: Volume de ocorrências por cidade
+      content:
+        -
+          text: Os círculos no mapa indicam o volume de ocorrências em cada município. Quanto maior o círculo, mais ocorrências na área.
+          map:
+            settings: *coords.Litoral
+            circles:
+              -
+                position: *coords.Cananéia
+                popupText: |
+                  **Cananéia**
+
+                  Ocorrências: 159
+                size: 159
+              -
+                position: *coords.IlhaComprida
+                popupText: |
+                  **IlhaComprida**
+
+                  Ocorrências: 688
+                size: 688
+              -
+                position: *coords.Iguape
+                popupText: |
+                  **Iguape**
+
+                  Ocorrências: 54
+                size: 54
+              -
+                position: *coords.Peruíbe
+                popupText: |
+                  **Peruíbe**
+
+                  Ocorrências: 434
+                size: 434
+              -
+                position: *coords.Itanhaém
+                popupText: |
+                  **Itanhaém**
+
+                  Ocorrências: 348
+                size: 348
+              -
+                position: *coords.Mongaguá
+                popupText: |
+                  **Mongaguá**
+
+                  Ocorrências: 347
+                size: 347
+              -
+                position: *coords.PraiaGrande
+                popupText: |
+                  **PraiaGrande**
+
+                  Ocorrências: 377
+                size: 377
+              -
+                position: *coords.SãoVicente
+                popupText: |
+                  **SãoVicente**
+
+                  Ocorrências: 101
+                size: 101
+              -
+                position: *coords.Santos
+                popupText: |
+                  **Santos**
+
+                  Ocorrências: 82
+                size: 82
+              -
+                position: *coords.Guarujá
+                popupText: |
+                  **Guarujá**
+
+                  Ocorrências: 351
+                size: 351
+              -
+                position: *coords.Bertioga
+                popupText: |
+                  **Bertioga**
+
+                  Ocorrências: 117
+                size: 117
+              -
+                position: *coords.SãoSebastião
+                popupText: |
+                  **SãoSebastião**
+
+                  Ocorrências: 182
+                size: 182
+              -
+                position: *coords.Ilhabela
+                popupText: |
+                  **Ilhabela**
+
+                  Ocorrências: 410
+                size: 410
+              -
+                position: *coords.Caraguatatuba
+                popupText: |
+                  **Caraguatatuba**
+
+                  Ocorrências: 293
+                size: 293
+              -
+                position: *coords.Ubatuba
+                popupText: |
+                  **Ubatuba**
+
+                  Ocorrências: 773
+                size: 773
 
 actTwo:
   title: 'II: As Causas'
