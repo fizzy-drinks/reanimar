@@ -2,7 +2,7 @@
 l-map(
   :zoom='map.settings.zoom || 5'
   :center='L.latLng(map.settings.lat || 0, map.settings.lng || 0)'
-  style='height: 540px; width: 90vw'
+  style='height: 80vh; width: 90vw'
 )
   l-tile-layer(
     :url='openMapUrl'
