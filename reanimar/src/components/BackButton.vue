@@ -9,6 +9,7 @@ export default {
   methods: {
     goHome () {
       this.$router.push('/')
+      window.scrollTo({ top: 0, left: 0 })
     }
   }
 }
