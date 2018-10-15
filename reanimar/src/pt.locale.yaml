@@ -15,8 +15,10 @@ standardCoords:
   IlhaCompridaIguape: &coords.IlhaCompridaIguape [-24.70, -47.50]
   Iguape: &coords.Iguape [-24.65, -47.38]
   Peruíbe: &coords.Peruíbe [-24.3173, -46.9956]
+  PeruíbeItanhaém: &coords.PeruíbeItanhaém [-24.24, -46.88]
   Itanhaém: &coords.Itanhaém [-24.1817, -46.785]
-  Mongaguá: &coords.Mongaguá [-24.1075, -46.6802]
+  Mongaguá: &coords.Mongaguá [-24.125, -46.6802]
+  MongaguáPraiaGrande: &coords.MongaguáPraiaGrande [-24.07, -46.58]
   PraiaGrande: &coords.PraiaGrande [-24.02, -46.45]
   SãoVicente: &coords.SãoVicente [-23.97, -46.37]
   Santos: &coords.Santos [-23.97, -46.32]
@@ -125,29 +127,43 @@ actOne:
                 popupText: |
                   **Peruíbe**
 
-                  Ocorrências: 434
-                size: 434
+                  Ocorrências: 80
+                size: 80
+              -
+                position: *coords.PeruíbeItanhaém
+                popupText: |
+                  **Peruíbe/Itanhaém**
+
+                  Ocorrências: 354
+                size: 354
               -
                 position: *coords.Itanhaém
                 popupText: |
                   **Itanhaém**
 
-                  Ocorrências: 348
-                size: 348
+                  Ocorrências: 218
+                size: 218
               -
                 position: *coords.Mongaguá
                 popupText: |
                   **Mongaguá**
 
-                  Ocorrências: 347
-                size: 347
+                  Ocorrências: 146
+                size: 146
+              -
+                position: *coords.MongaguáPraiaGrande
+                popupText: |
+                  **Mongaguá/Praia Grande**
+
+                  Ocorrências: 201
+                size: 201
               -
                 position: *coords.PraiaGrande
                 popupText: |
-                  **PraiaGrande**
+                  **Praia Grande**
 
-                  Ocorrências: 377
-                size: 377
+                  Ocorrências: 176
+                size: 176
               -
                 position: *coords.SãoVicente
                 popupText: |
