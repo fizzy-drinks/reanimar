@@ -205,13 +205,13 @@ actOne:
         -
           iconText:
             text: O plástico descartado irregularmente por pessoas nas praias
-            icon: https://www.shareicon.net/download/2015/12/31/695793_drink_512x512.png
+            icon: https://static.thenounproject.com/png/1741489-200.png
             iconBgColor: '#88ff88'
         -
           iconText:
             text: A pesca, principalmente em alto mar
             iconBgColor: '#88aaff'
-            icon: http://cdn.onlinewebfonts.com/svg/img_498281.png
+            icon: https://d30y9cdsu7xlg0.cloudfront.net/png/196935-200.png
         -
           iconText:
             text: Derramamentos de óleo e produtos químicos de embarcações
@@ -221,7 +221,7 @@ actOne:
           iconText:
             text: As mudanças climáticas e as correntes dos oceanos
             iconBgColor: '#ffaa88'
-            icon: https://www.iconspng.com/uploads/sun-icon/sun-icon.png
+            icon: https://static.thenounproject.com/png/170-200.png
 
 actTwo:
   title: 'II: Os Culpados'
