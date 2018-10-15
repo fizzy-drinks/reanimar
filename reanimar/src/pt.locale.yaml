@@ -24,10 +24,12 @@ standardCoords:
   Santos: &coords.Santos [-23.97, -46.32]
   Guarujá: &coords.Guarujá [-23.9948, -46.2569]
   Bertioga: &coords.Bertioga [-23.8156, -46.0373]
-  SãoSebastião: &coords.SãoSebastião [-23.8064, -45.4017]
+  BertiogaSãoSebastião: &coords.BertiogaSãoSebastião [-23.76, -45.8]
+  SãoSebastião: &coords.SãoSebastião [-23.81, -45.5]
   Ilhabela: &coords.Ilhabela [-23.779, -45.3557]
   Caraguatatuba: &coords.Caraguatatuba [-23.6255, -45.4241]
-  Ubatuba: &coords.Ubatuba [-23.3714, -45.0187]
+  CaraguatatubaUbatuba: &coords.CaraguatatubaUbatuba [-23.55, -45.25]
+  Ubatuba: &coords.Ubatuba [-23.45, -45.06]
 
 appTitle: Reanimar
 appCaption: Um ensaio sobre a vida marinha.
@@ -167,7 +169,7 @@ actOne:
               -
                 position: *coords.SãoVicente
                 popupText: |
-                  **SãoVicente**
+                  **São Vicente**
 
                   Ocorrências: 101
                 size: 101
@@ -190,15 +192,22 @@ actOne:
                 popupText: |
                   **Bertioga**
 
-                  Ocorrências: 117
-                size: 117
+                  Ocorrências: 310
+                size: 310
+              -
+                position: *coords.BertiogaSãoSebastião
+                popupText: |
+                  **Boracéia (Bertioga/São Sebastião)**
+
+                  Ocorrências: 49
+                size: 49
               -
                 position: *coords.SãoSebastião
                 popupText: |
-                  **SãoSebastião**
+                  **São Sebastião**
 
-                  Ocorrências: 182
-                size: 182
+                  Ocorrências: 321
+                size: 321
               -
                 position: *coords.Ilhabela
                 popupText: |
@@ -211,15 +220,22 @@ actOne:
                 popupText: |
                   **Caraguatatuba**
 
-                  Ocorrências: 293
-                size: 293
+                  Ocorrências: 273
+                size: 273
+              -
+                position: *coords.CaraguatatubaUbatuba
+                popupText: |
+                  **Ubatuba**
+
+                  Ocorrências: 20
+                size: 20
               -
                 position: *coords.Ubatuba
                 popupText: |
                   **Ubatuba**
 
-                  Ocorrências: 773
-                size: 773
+                  Ocorrências: 753
+                size: 753
 
     -
       title: As causas
