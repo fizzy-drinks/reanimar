@@ -19,7 +19,7 @@ l-map(
     v-for='(circle, i) in (map.circles || [])'
     :key='i'
     :lat-lng='L.latLng(...circle.position)'
-    :radius='circle.size * 10'
+    :radius='circle.size * 12'
     :color='circle.color || "darkorange"'
     :fillColor='circle.fill || "darkorange"'
   )
