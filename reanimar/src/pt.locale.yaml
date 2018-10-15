@@ -55,13 +55,13 @@ actOne:
               fontName: Roboto
               height: 540
               isStacked: true
-              title: Animais encontrados no litoral de São Paulo (Ago/2016-Ago/2017)
+              title: Animais encontrados no litoral de São Paulo (Jun/2017-Jun/2018)
               colors: ['#f88', '#8af']
             data:
               - [Classe, Mortos, Vivos]
-              - ["Répteis (tartarugas)", 1749, 157]
-              - ["Aves (albatrozes e pinguins)", 1294, 63]
-              - ["Mamíferos (golfinhos, baleias e botos)", 297, 1]
+              - ["Répteis (tartarugas)", 3065, 637]
+              - ["Aves (albatrozes e pinguins)", 416, 175]
+              - ["Mamíferos (golfinhos, baleias e botos)", 466, 17]
 
     # PMP 17
     -
@@ -92,7 +92,7 @@ actOne:
     - title: Volume de ocorrências por cidade
       content:
         -
-          text: Os círculos no mapa indicam o volume de ocorrências em cada município. Quanto maior o círculo, mais ocorrências na área.
+          text: Os círculos no mapa indicam o volume de ocorrências em cada região. Quanto maior o círculo, mais ocorrências na área.
           map:
             settings: *coords.Litoral
             circles:
