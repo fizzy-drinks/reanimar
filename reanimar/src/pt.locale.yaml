@@ -4,11 +4,13 @@ standardStyles:
   black: &style.black
     bgColor: black
     color: '#dfdfdf'
+  gray: &style.gray
+    bgColor: '#dfdfdf'
 
 standardCoords:
   Litoral: &coords.Litoral
     lat: -24.2
-    lng: -46
+    lng: -46.5
     zoom: 8
   Cananéia: &coords.Cananéia [-25.0244, -47.9323]
   IlhaComprida: &coords.IlhaComprida [-24.76, -47.57]
@@ -92,14 +94,54 @@ actOne:
     - title: Volume de ocorrências por cidade
       content:
         -
-          text: Os círculos no mapa indicam o volume de ocorrências em cada região. Quanto maior o círculo, mais ocorrências na área.
+          text: |
+            Os círculos no mapa indicam o volume de ocorrências em cada região. Quanto maior o círculo, mais ocorrências na área.
+
+            Esse mapa interativo não mostra apenas em quais locais mais animais são encontrados, mas também os pontos onde o monitoramento é mais carente, uma vez que regiões de difícil acesso - como a região de Boracéia, em Bertioga - têm uma cobertura mais carente.
+
+            É possível, ainda que não comprovado, que o número de ocorrências nessas áreas fosse similar ao das outras áreas, mas que não haja pessoas suficientes para que a proteção desses animais seja suficiente.
+
+            *Clique ou toque nos círculos para ver detalhes sobre a região.*
           map:
             settings: *coords.Litoral
+            markers:
+              -
+                position: [-25.0064579, -47.9268818]
+                popupText: |
+                  **IPEC - Instituto de Pesquisas Cananéia**
+
+                  Principal instituto de pesquisa marinha do Vale do Ribeira. Responsável pelo monitoramento de Cananéia, Ilha Comprida e Iguape pelo PMP.
+              -
+                position: [-24.185314,-46.7886039]
+                popupText: |
+                  **Instituto Gremar (posto de estabilização)**
+
+                  Serve como ponto intermediário para o resgate de animais encontrados nas praias.
+              -
+                position: [-24.0048938,-46.4028284]
+                popupText: |
+                  **Instituto Biopesca**
+
+                  Responsável pelo monitoramento das praias entre as cidades de Peruíbe e Praia Grande.
+              -
+                position: [-23.9060064,-46.2025308]
+                popupText: |
+                  **Instituto Gremar**
+
+                  Responsável pelo monitoramento das praias entre as cidades de São Vicente e Bertioga.
+              -
+                position: [-23.4453423,-45.0722052]
+                popupText: |
+                  **Instituto Argonauta**
+
+                  Responsável pelo monitoramento das praias do Litoral Norte Paulista (região do Vale do Paraíba), entre as cidades de São Sebastião e Ubatuba.
             circles:
               -
                 position: *coords.Cananéia
                 popupText: |
                   **Cananéia**
+
+                  Sede do IPEC - Instituto de Pesquisas Cananéia.
 
                   Ocorrências: 159
                 size: 159
@@ -143,6 +185,8 @@ actOne:
                 popupText: |
                   **Itanhaém**
 
+                  Sede secundária do Instituto Gremar.
+
                   Ocorrências: 218
                 size: 218
               -
@@ -164,6 +208,8 @@ actOne:
                 popupText: |
                   **Praia Grande**
 
+                  Sede do Instituto Biopesca.
+
                   Ocorrências: 176
                 size: 176
               -
@@ -184,6 +230,8 @@ actOne:
                 position: *coords.Guarujá
                 popupText: |
                   **Guarujá**
+
+                  Sede primária do Instituto Gremar.
 
                   Ocorrências: 351
                 size: 351
@@ -234,13 +282,14 @@ actOne:
                 popupText: |
                   **Ubatuba**
 
+                  Sede do Instituto Argonauta.
+
                   Ocorrências: 753
                 size: 753
 
     -
       title: As causas
-      style:
-        bgColor: '#dfdfdf'
+      style: *style.gray
       content:
         -
           iconText:
