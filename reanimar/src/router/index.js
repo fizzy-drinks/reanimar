@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/Home'
-import ActOne from '@/components/ActOne'
+
+const Home = () => import('@/components/Home')
+const ActOne = () => import('@/components/ActOne')
 
 Vue.use(Router)
 
