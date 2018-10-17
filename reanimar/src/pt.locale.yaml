@@ -6,6 +6,8 @@ standardStyles:
     color: '#dfdfdf'
   gray: &style.gray
     bgColor: '#dfdfdf'
+  green: &style.green
+    bgColor: '#e4ffe4'
 
 standardCoords:
   Litoral: &coords.Litoral
@@ -65,10 +67,9 @@ actOne:
               - ["Aves (albatrozes e pinguins)", 416, 175]
               - ["Mamíferos (golfinhos, baleias e botos)", 466, 17]
 
-    # PMP 17
     -
-      title: Os animais encontrados
-      style: *style.white
+      title: As regiões monitoradas
+      style: *style.green
       content:
         -
           chart:
@@ -76,13 +77,15 @@ actOne:
             options:
               fontName: Roboto
               height: 540
-              title: Animais encontrados por quilômetro monitorado no Estado de São Paulo
+              title: Ocorrências por região em São Paulo (Jun/2017-Jun/2018)
+              backgroundColor:
+                fill: transparent
             data:
               - [Classe, Vale do Paraíba, Região Metropolitana, Litoral Sul]
-              - ["Répteis (tartarugas)", 0.01613, 0.02178, 0.01924]
-              - ["Aves (albatrozes e pinguins)", 0.00584, 0.01025, 0.01411]
-              - ["Mamíferos (golfinhos, baleias e botos)", 0.00118, 0.00153, 0.0022]
-              - [Total, 0.02314, 0.03321, 0.03555]
+              - ["Répteis (tartarugas)", 1475, 811, 1416]
+              - ["Aves (albatrozes e pinguins)", 137, 148, 306]
+              - ["Mamíferos (golfinhos, baleias e botos)", 165, 110, 208]
+              - [Total, 1777, 1069, 1930]
     -
       title: O monitoramento das praias
       content:
