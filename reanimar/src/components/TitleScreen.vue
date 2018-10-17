@@ -1,6 +1,6 @@
 <template lang='pug'>
 section.screen(:style='image' :class='{ clickable: !!linkTo }' @click='go')
-  .centered
+  .centered.shade
     h2 {{ title }}
     p.caption {{ caption }}
   .righted(v-if='linkTo')
