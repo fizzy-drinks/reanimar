@@ -54,7 +54,7 @@ actOne:
         - text: Esse é o número de animais que foram encontrados nas praias de São Paulo entre agosto de 2017 e agosto de 2018. Isso significa que, para cada humano que morre no mar, 6 animais marinhos morrem em terra entre Cananéia e Ubatuba.
     -
       title: Os animais encontrados
-      style: *style.white
+      style: *style.lightGray
       content:
         -
           chart:
@@ -65,6 +65,8 @@ actOne:
               isStacked: true
               title: Animais encontrados no litoral de São Paulo (Jun/2017-Jun/2018)
               colors: ['#f88', '#8af']
+              backgroundColor:
+                fill: transparent
             data:
               - [Classe, Mortos, Vivos]
               - ["Répteis (tartarugas)", 3065, 637]
@@ -73,7 +75,7 @@ actOne:
 
     -
       title: As regiões monitoradas
-      style: *style.green
+      style: *style.blue
       content:
         -
           chart:
@@ -82,6 +84,7 @@ actOne:
               fontName: Roboto
               height: 540
               title: Ocorrências por região em São Paulo (Jun/2017-Jun/2018)
+              legend: bottom
               backgroundColor:
                 fill: transparent
             data:
@@ -97,7 +100,6 @@ actOne:
           text: Rodrigo Valle, coordenador do Instituto Biopesca, comenta o processo de monitoramento das praias
           audio: none for now
 
-    # Atualizado PMP 18
     - title: Volume de ocorrências por cidade
       content:
         -
