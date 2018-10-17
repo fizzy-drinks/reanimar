@@ -4,10 +4,14 @@ standardStyles:
   black: &style.black
     bgColor: black
     color: '#dfdfdf'
+  lightGray: &style.lightGray
+    bgColor: '#f0f0f0'
   gray: &style.gray
     bgColor: '#dfdfdf'
-  green: &style.green
-    bgColor: '#e4ffe4'
+  red: &style.red
+    bgColor: '#ffe4e4'
+  blue: &style.blue
+    bgColor: '#e4e4ff'
 
 standardCoords:
   Litoral: &coords.Litoral
