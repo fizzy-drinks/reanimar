@@ -51,11 +51,46 @@ actOne:
       style: *style.black
       title: Mais de 4.500 animais marinhos
       content:
-        - text: Esse é o número de animais que foram encontrados nas praias de São Paulo entre agosto de 2017 e agosto de 2018. Isso significa que, para cada humano que morre no mar, 6 animais marinhos morrem em terra entre Cananéia e Ubatuba.
+        -
+          text: |
+            Esse é o número de animais que foram encontrados nas praias de São Paulo entre agosto de 2017 e agosto de 2018. Isso significa que, para cada humano que morre no mar, 6 animais marinhos morrem em terra entre Cananéia e Ubatuba.
     -
-      title: Os animais encontrados
+      title: O monitoramento
       style: *style.lightGray
       content:
+        -
+          text: |
+            Desde 2012, a Petrobras patrocina o Projeto de Monitoramento de Praias (PMP), que foi uma exigência dos órgãos ambientais para autorizar a extração de petróleo e gás natural do Pólo Pré-sal da Bacia de Santos. O projeto tem como objetivo incentivar a pesquisa dos impactos dessa exploração na vida marinha.
+
+            O PMP atua em vários Estados do Brasil, patrocinando institutos que efetuam pesquisa nas regiões atribúidas a eles, além do monitoramento das praias e resgate dos animais encontrados.
+
+    -
+      title: Quem monitora as praias paulistas
+      content:
+        -
+          iconText:
+            icon: http://ipecpesquisas.org.br/wp-content/uploads/2012/08/lo.png
+            text: |
+              **IPEC**: atua em Cananéia, Ilha Comprida e Iguape
+        -
+          iconText:
+            icon: http://www.biopesca.org.br/img/top_logo.png
+            text: |
+              **Biopesca**: trabalha entre Peruíbe e Praia Grande
+        -
+          iconText:
+            icon: https://www.ecoloja.art.br/image/cache/catalog/Projetos/GREMAR-500x500.jpg
+            text: |
+              **Gremar**: monitora as praias de São Vicente a Bertioga
+        -
+          iconText:
+            icon: http://3.bp.blogspot.com/_JJJ4o4Jcg48/RxTLulr2eCI/AAAAAAAADKE/A4lvL2I7rYw/s1600/logo_argo.jpg
+            text: |
+              **Argonauta**: cuida do Litoral Norte, entre São Sabestião e a divisa com o Rio de Janeiro
+
+        -
+          text: |
+            No entanto, apenas uma pequena parcela destes animais é encontrada com vida, e uma ainda menor retorna ao seu hábitat natural.
         -
           chart:
             type: ColumnChart
@@ -65,6 +100,8 @@ actOne:
               isStacked: true
               title: Animais encontrados no litoral de São Paulo (Jun/2017-Jun/2018)
               colors: ['#f88', '#8af']
+              legend:
+                position: bottom
               backgroundColor:
                 fill: transparent
             data:
@@ -72,6 +109,9 @@ actOne:
               - ["Répteis (tartarugas)", 3065, 637]
               - ["Aves (albatrozes e pinguins)", 416, 175]
               - ["Mamíferos (golfinhos, baleias e botos)", 466, 17]
+        -
+          text: |
+            Embora estejam num bom momento graças ao patrocínio, as ONGs ainda dependem do seu acionamento por pessoas comuns para efetuar alguns resgates. "Nem sempre estamos por perto quando encontram algum animal, então as pessoas ajudam muito", conta Nelson Sater, gerente administrativo do Instituto Biopesca. Uma grande ajuda para o instituto é a dos pescadores artesanais, que ficam várias horas nos mesmos pontos da praia. "Eu tô com [o projeto] desde 2001", relata Roberto, pescador artesanal de Praia Grande. "Quando encontro um animal morto, sempre chamo o pessoal. Tô aqui pescando desde 1968, já vi de tudo", comenta.
 
     -
       title: As regiões monitoradas
@@ -88,7 +128,7 @@ actOne:
               backgroundColor:
                 fill: transparent
             data:
-              - [Classe, Vale do Paraíba, Região Metropolitana, Litoral Sul]
+              - [Classe, Litoral Norte, Região Metropolitana (Praia Grande-Bertioga), Litoral Sul (Cananéia-Mongaguá)]
               - ["Répteis (tartarugas)", 1475, 811, 1416]
               - ["Aves (albatrozes e pinguins)", 137, 148, 306]
               - ["Mamíferos (golfinhos, baleias e botos)", 165, 110, 208]
@@ -104,11 +144,16 @@ actOne:
       content:
         -
           text: |
+            Quem mora na praia está acostumado com a presença de animais marinhos. É difícil encontrar quem nunca tenha visto um bicho encalhado pelo menos uma vez. "Eu já vi mais de quinze", conta Caio Araújo, desenvolvedor de 21 anos. "O que mais vejo é pinguim e tartaruga, mas já vi tubarão, baleia e até foca", conta o rapaz, que vive em Itanhaém desde que nasceu. Vendo animais marinhos com tanta frequência, é difícil imaginar que isso é algo fora do comum.
+
+            No entanto, o fato é que muitos animais enfrentam problemas por causa de ações humanas, como a presença do lixo nos mares, derramamento de óleo e até os impactos no fundo do mar, causados pela extração de petróleo. "Muitos animais que dependem da localização sonora acabam se desorientando no fundo do mar devido à ação humana", comenta Fábio Giordano, pesquisador e coordenador do curso de Biologia Marinha da Universidade Santa Cecília.
+        -
+          text: |
             Os círculos no mapa indicam o volume de ocorrências em cada região. Quanto maior o círculo, mais ocorrências na área.
 
             Esse mapa interativo não mostra apenas em quais locais mais animais são encontrados, mas também os pontos onde o monitoramento é mais carente, uma vez que regiões de difícil acesso - como a região de Boracéia, em Bertioga - têm uma cobertura mais carente.
 
-            É possível, ainda que não comprovado, que o número de ocorrências nessas áreas fosse similar ao das outras áreas, mas que não haja pessoas suficientes para que a proteção desses animais seja suficiente.
+            É possível, ainda que não comprovado, que o número de ocorrências nessas áreas seja similar ao das outras áreas, mas que não haja pessoas suficientes para que a proteção desses animais seja suficiente.
 
             *Clique ou toque nos círculos para ver detalhes sobre a região.*
           map:
