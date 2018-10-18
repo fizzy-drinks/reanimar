@@ -10,14 +10,14 @@ l-map(
   )
   l-marker(
     v-for='(marker, i) in (map.markers || [])'
-    :key='i'
+    :key='"marker" + i'
     :title='marker.title'
     :lat-lng='L.latLng(...marker.position)'
   )
     l-popup(:content='md(marker.popupText)')
   l-circle(
     v-for='(circle, i) in (map.circles || [])'
-    :key='i'
+    :key='"circle" + i'
     :lat-lng='L.latLng(...circle.position)'
     :radius='circle.size * 12'
     :color='circle.color || "darkorange"'
