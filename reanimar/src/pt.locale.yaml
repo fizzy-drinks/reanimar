@@ -341,6 +341,10 @@ actOne:
                   Ocorrências: 753
                 size: 753
 
+actTwo:
+  title: 'II: As Causas'
+  caption: A raiz do problema
+  frames:
     -
       title: As causas
       style: *style.gray
@@ -365,10 +369,6 @@ actOne:
             text: As mudanças climáticas e as correntes dos oceanos
             iconBgColor: '#ffaa88'
             icon: https://static.thenounproject.com/png/170-200.png
-
-actTwo:
-  title: 'II: Os Culpados'
-  caption: conteúdo em breve
 
 actThree:
   title: 'III: A Solução'
