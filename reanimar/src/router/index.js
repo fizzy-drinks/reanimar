@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 const Home = () => import('@/components/Home')
 const ActOne = () => import('@/components/ActOne')
+const ActTwo = () => import('@/components/ActTwo')
 
 Vue.use(Router)
 
@@ -13,6 +14,9 @@ export default new Router({
       component: Home },
     { path: '/problema',
       name: 'O Problema',
-      component: ActOne }
+      component: ActOne },
+    { path: '/causa',
+      name: 'A Causa',
+      component: ActTwo }
   ]
 })
