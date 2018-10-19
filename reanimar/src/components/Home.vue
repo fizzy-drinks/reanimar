@@ -11,11 +11,10 @@
     :caption='text.actOne.caption'
     :bg='require("../../static/act_i.jpg")'
     linkTo='/problema'
-
   )
 
-  title-screen(:title='text.actTwo.title' linkTo='/causa')
-  title-screen(:title='text.actThree.title')
+  title-screen(:title='text.actTwo.title' :caption='text.actTwo.caption' linkTo='/causa')
+  title-screen(:title='text.actThree.title' :caption='text.actThree.caption')
 </template>
 
 <script>
