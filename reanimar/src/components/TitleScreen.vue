@@ -3,7 +3,7 @@ section.screen(:style='image')
   .centered.shade(:class='{ clickable: !!linkTo }' @click='go')
     h2 {{ title }}
     p.caption {{ caption }}
-  .righted(v-if='linkTo')
+  .righted.clickable(v-if='linkTo' @click='go')
     fa-icon(icon='angle-right' size='3x')
 </template>
 
