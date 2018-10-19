@@ -7,6 +7,8 @@
     ref='page'
   )
 
+  title-screen(:title='text.actTwo.title' linkTo='/causa')
+
   back-button
 </template>
 
