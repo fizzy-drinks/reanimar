@@ -28,7 +28,7 @@ export default {
   align-items: center
   justify-content: center
 
-  color: #dfdfdf
+  color: #aaa
   border-radius: 5%
   border: transparent 2px solid
   cursor: pointer
@@ -42,5 +42,5 @@ export default {
     height: 36px
     opacity: 1
     border-radius: 50%
-    border-color: #dfdfdf
+    border-color: #aaa
 </style>
