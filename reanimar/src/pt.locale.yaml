@@ -155,7 +155,7 @@ actOne:
 
             É possível, ainda que não comprovado, que o número de ocorrências nessas áreas seja similar ao das outras áreas, mas que não haja pessoas suficientes para que a proteção desses animais seja suficiente.
 
-            *Clique ou toque nos círculos para ver detalhes sobre a região.*
+            <small>*Clique ou toque nos círculos para ver detalhes sobre a região.*</small>
           map:
             settings: *coords.Litoral
             markers:
