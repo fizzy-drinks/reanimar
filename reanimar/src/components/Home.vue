@@ -1,5 +1,5 @@
 <template lang="pug">
-.home
+.home(v-if='!loadingFile')
   title-screen(
     :bg='require("../../static/title.jpg")'
     :title='text.appTitle'

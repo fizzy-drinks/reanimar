@@ -1,15 +1,18 @@
 <template lang='pug'>
 #app
-  router-view
-  .loader(:class='{ active: loading }')
+  router-view(v-if='!loadingFile')
+  .loader(:class='{ active: loading || loadingFile }')
     | Carregando...
     .pong
 
 </template>
 
 <script>
+import TextManager from './components/TextManager'
+
 export default {
   name: 'MainApp',
+  mixins: [TextManager],
   data () {
     return {
       loading: false

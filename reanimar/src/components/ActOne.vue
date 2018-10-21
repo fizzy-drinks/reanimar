@@ -1,5 +1,5 @@
 <template lang="pug">
-.home
+.home(v-if='!loadingFile')
   text-screen(
     v-for='(frame, i) in text.actOne.frames'
     :key='i'
