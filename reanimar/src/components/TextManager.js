@@ -3,7 +3,14 @@ import YAML from 'yaml'
 import content from '../content.yaml'
 
 const isProd = process.env.NODE_ENV !== 'development'
-const RawYamlUrl = 'https://raw.githubusercontent.com/gabrielchiconi/reanimar/master/reanimar/src/content.yaml'
+const RawYamlUrl = 'https://pastebin.com/raw/cm2jYsdG'
+
+const textContent = (async () => {
+  if (!isProd) return
+  const { data: yamlFile } = await Axios.get(RawYamlUrl)
+  this.text = YAML.parse(yamlFile)
+  this.loadingFile = false
+})()
 
 export default {
   data () {
@@ -14,9 +21,7 @@ export default {
   },
   async mounted () {
     if (isProd) {
-      const { data: yamlFile } = await Axios.get(RawYamlUrl)
-      this.text = YAML.parse(yamlFile)
-      this.loadingFile = false
+      this.text = await textContent
     }
   }
 }

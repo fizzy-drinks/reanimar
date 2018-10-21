@@ -39,7 +39,7 @@ standardCoords:
   CaraguatatubaUbatuba: &coords.CaraguatatubaUbatuba [-23.55, -45.25]
   Ubatuba: &coords.Ubatuba [-23.45, -45.06]
 
-appTitle: Reanimate
+appTitle: Reanimar
 appCaption: Um ensaio sobre a vida marinha.
 
 actOne:
