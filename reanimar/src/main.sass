@@ -44,6 +44,22 @@ h2
 h1, h2, h3
   font-family: 'Roboto Slab', serif
 
+figure
+  margin: .5em 1em
+  padding: .5em
+  border: #aaa 1px solid
+  border-radius: 5px
+
+.nudge-right
+  float: right
+  margin-right: 0
+
+  +mobile
+    float: none
+    margin-right: auto
+    margin-left: auto
+    max-width: 70%
+
 @keyframes ping
   0%
     margin-left: 0
@@ -116,6 +132,9 @@ h1, h2, h3
   text-align: right
   position: absolute
   right: 2vw
+
+.centered
+  max-width: 1080px
 
 .centered
   width: 100%

@@ -7,12 +7,14 @@ section.screen(:style='customStyle')
         .icon(:style='{ backgroundColor: section.iconText.iconBgColor || "white" }')
           img(:src='section.iconText.icon')
         p(v-html='md(section.iconText.text)')
-      img(
-        v-if='section.picture'
-        :alt='section.picture.alt'
-        :src='section.picture.src'
-      )
-      p(v-if='section.text' v-html='md(section.text)')
+      .container
+        figure.nudge-right(v-if='section.picture')
+          img(
+            :alt='section.picture.alt'
+            :src='section.picture.src'
+          )
+          legend {{ section.picture.legend }}
+        p(v-if='section.text' v-html='md(section.text)')
       audio(v-if='section.audio' :src='section.audio' controls)
       youtube-video(v-if='section.video' :id='section.video')
       google-chart(
