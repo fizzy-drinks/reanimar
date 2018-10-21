@@ -22,6 +22,7 @@ export default {
   async mounted () {
     if (isProd) {
       this.text = await textContent
+      this.loadingFile = false
     }
   }
 }
