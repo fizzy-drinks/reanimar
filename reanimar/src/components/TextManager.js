@@ -1,10 +1,10 @@
 import YAML from 'yaml'
-import pt from '../pt.locale.yaml'
+import content from '../content.yaml'
 
 export default {
   data () {
     return {
-      text: YAML.parse(pt)
+      text: YAML.parse(content)
     }
   }
 }
