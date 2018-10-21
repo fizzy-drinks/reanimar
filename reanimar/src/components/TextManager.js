@@ -8,15 +8,14 @@ const RawYamlUrl = '/reanimar/reanimar/src/content.yaml'
 const textContent = (async () => {
   if (!isProd) return
   const { data: yamlFile } = await Axios.get(RawYamlUrl)
-  this.text = YAML.parse(yamlFile)
-  this.loadingFile = false
+  return YAML.parse(yamlFile)
 })()
 
 export default {
   data () {
     return {
       loadingFile: isProd,
-      text: !isProd ? YAML.parse(content) : {}
+      text: isProd ? {} : YAML.parse(content)
     }
   },
   async mounted () {
