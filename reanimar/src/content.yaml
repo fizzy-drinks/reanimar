@@ -373,8 +373,15 @@ actTwo:
       title: A grande lixeira do mar
       content:
         -
+          picture:
+            src: https://gabrielchiconi.github.io/reanimar/reanimar/static/vila.gilda.PNG
+            legend: Com mais de 20 mil habitantes, a Vila Gilda é a maior favela sobre palafitas do Brasil (Google/2011)
           text: |
-            O lixo gerado pelo homem já é tema das discussões ambientais há poucas décadas. Embora hoje em dia todos estejam acostumados com esse debate, o tema de avaliação do impacto ambiental apenas tomou forma no final da década de 1960.
+            O lixo gerado pelo homem já é tema das discussões ambientais há algumas décadas. Embora hoje em dia todos estejam acostumados com esse debate, o tema de avaliação do impacto ambiental apenas tomou forma no final da década de 1960.
+
+            No entanto, este debate ainda precisa ganhar mais força. Estudos na área da ecologia reconhecem que os humanos são responsáveis pela mortalidade de 80% dos animais marinhos no litoral do Brasil entre Santa Catarina e São Paulo.
+
+            O fato é que quanto mais gente, mais lixo, e a população do litoral paulista só aumenta. Estudos mostram que 95% da população da Baixada Santista, área mais desenvolvida da costa de São Paulo, já vive em área urbana. Além disso, existe outro agravante: as habitações subnormais, ou seja, casas em condições precárias ou em áreas irregulares, como favelas e casas sobre palafitas. "Estamos acostumados a falar sobre as praias, os turistas", afirma Giordano. "No entanto, um problema muito sério existe numa região invisível da cidade de Santos", continua, referindo-se à favela de palafitas da Vila Gilda, a maior do país. "As pessoas nessas áreas irregulares não têm saneamento básico nem coleta de lixo. É um problema não só ambiental, mas social, e que afeta a todos nós."
 
 actThree:
   title: 'III: A Solução'
