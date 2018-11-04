@@ -373,10 +373,6 @@ actTwo:
       title: A grande lixeira do mar
       content:
         -
-          picture:
-            src: http://images.uncyc.org/commons/d/d2/Tio1.jpg
-            legend: A imagem tio1.jpg é um símbolo da antiga internet brasileira, antes dos memes americanos vazarem para o lado de cá do equador.
-            alt: lololo
           text: |
             O lixo gerado pelo homem já é tema das discussões ambientais há poucas décadas. Embora hoje em dia todos estejam acostumados com esse debate, o tema de avaliação do impacto ambiental apenas tomou forma no final da década de 1960.
 
