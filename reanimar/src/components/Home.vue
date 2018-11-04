@@ -13,8 +13,18 @@
     linkTo='/problema'
   )
 
-  title-screen(:title='text.actTwo.title' :caption='text.actTwo.caption' linkTo='/causa')
-  title-screen(:title='text.actThree.title' :caption='text.actThree.caption')
+  title-screen(
+    :title='text.actTwo.title'
+    :caption='text.actTwo.caption'
+    :bg='require("../../static/act_ii.jpg")'
+    linkTo='/causa'
+  )
+
+  title-screen(
+    :title='text.actThree.title'
+    :caption='text.actThree.caption'
+    :bg='require("../../static/act_iii.jpg")'
+  )
 </template>
 
 <script>
