@@ -346,8 +346,51 @@ actTwo:
   caption: A raiz do problema
   frames:
     -
-      title: As causas
+      title: A grande lixeira do mar
       style: *style.gray
+      content:
+        -
+          text: |
+            O lixo gerado pelo homem já é tema das discussões ambientais há algumas décadas. Embora hoje em dia todos estejam acostumados com esse debate, o tema de avaliação do impacto ambiental apenas tomou forma no final da década de 1960.
+
+            No entanto, este debate ainda precisa ganhar mais força. Estudos na área da ecologia reconhecem que os humanos são responsáveis pela mortalidade de 80% dos animais marinhos no litoral do Brasil entre Santa Catarina e São Paulo.
+        -
+          picture:
+            src: /reanimar/reanimar/static/vila.gilda.PNG
+            legend: Com mais de 20 mil habitantes, a Vila Gilda é a maior favela sobre palafitas do Brasil (Google/2011)
+          text: |
+            O fato é que quanto mais gente, mais lixo, e a população do litoral paulista só aumenta. Estudos mostram que 95% da população da Baixada Santista, área mais desenvolvida da costa de São Paulo, já vive em área urbana. Além disso, existe outro agravante: as habitações subnormais, ou seja, casas em condições precárias ou em áreas irregulares, como favelas e casas sobre palafitas. "Estamos acostumados a falar sobre as praias, os turistas", afirma Giordano. "No entanto, um problema muito sério existe numa região invisível da cidade de Santos", continua, referindo-se à favela de palafitas da Vila Gilda, a maior do país. "As pessoas nessas áreas irregulares não têm saneamento básico nem coleta de lixo. É um problema não só ambiental, mas social, e que afeta a todos nós."
+        -
+          chart:
+            type: LineChart
+            options:
+              fontName: Roboto
+              height: 540
+              title: Crescimento populacional na Baixada Santista
+              colors: ['#3a3', '#a33', '#33a']
+              legend:
+                position: bottom
+              backgroundColor:
+                fill: '#f0f0f0'
+              trendLines:
+                0:
+                  type: exponential
+            data:
+              - [Ano, População rural ou suburbana, População urbana, População total]
+              - ["1940", 66005, 128814, 194819]
+              - ["1950", 66427, 200960, 267387]
+              - ["1960", 23925, 398148, 422073]
+              - ["1970", 23759, 629682, 653441]
+              - ["1980", 5203, 956046, 961249]
+              - ["1991", 5245, 1215004, 1220249]
+              - ["2000", 6046, 1470774, 1476820]
+        -
+          text: |
+            O lixo que vai parar nos oceanos também tem relação com o turismo. Em 2016, [a cidade de Santos recolheu 140 toneladas de lixo das praias após o *Réveillon*](http://g1.globo.com/sp/santos-regiao/noticia/2016/01/santos-recolhe-140-toneladas-de-lixo-na-orla-da-praia-apos-reveillon.html).
+
+    -
+      title: Outras causas
+      style: *style.lightGray
       content:
         -
           iconText:
@@ -370,19 +413,15 @@ actTwo:
             iconBgColor: '#ffaa88'
             icon: https://static.thenounproject.com/png/170-200.png
     -
-      title: A grande lixeira do mar
+      title: A exploração do petróleo na Baixada Santista
       content:
         -
           text: |
-            O lixo gerado pelo homem já é tema das discussões ambientais há algumas décadas. Embora hoje em dia todos estejam acostumados com esse debate, o tema de avaliação do impacto ambiental apenas tomou forma no final da década de 1960.
+            Desde 2006 há conhecimento do petróleo na camada pré-sal brasileira. Em anos recentes, se tornou objeto de estudo e investimentos na Bacia de Santos, situada entre os estados de Santa Catarina e São Paulo, e também em outros pontos do litoral brasileiro.
 
-            No entanto, este debate ainda precisa ganhar mais força. Estudos na área da ecologia reconhecem que os humanos são responsáveis pela mortalidade de 80% dos animais marinhos no litoral do Brasil entre Santa Catarina e São Paulo.
-        -
-          picture:
-            src: https://gabrielchiconi.github.io/reanimar/reanimar/static/vila.gilda.PNG
-            legend: Com mais de 20 mil habitantes, a Vila Gilda é a maior favela sobre palafitas do Brasil (Google/2011)
-          text: |
-            O fato é que quanto mais gente, mais lixo, e a população do litoral paulista só aumenta. Estudos mostram que 95% da população da Baixada Santista, área mais desenvolvida da costa de São Paulo, já vive em área urbana. Além disso, existe outro agravante: as habitações subnormais, ou seja, casas em condições precárias ou em áreas irregulares, como favelas e casas sobre palafitas. "Estamos acostumados a falar sobre as praias, os turistas", afirma Giordano. "No entanto, um problema muito sério existe numa região invisível da cidade de Santos", continua, referindo-se à favela de palafitas da Vila Gilda, a maior do país. "As pessoas nessas áreas irregulares não têm saneamento básico nem coleta de lixo. É um problema não só ambiental, mas social, e que afeta a todos nós."
+            Essa extração se dá através da perfuração do solo marinho com máquinas pesadas, o que causa estrondos no fundo do mar que desorientam animais que dependem das correntes e das ondas sonoras para se orientar, causando encalhes. "Existem estudos feitos na região para medir o impacto da extração de petróleo nesse ecossistema", explica Fábio Giordano, "mas eles ainda não acontecem num volume tão grande quanto seria ideal. É complexo, pois os pesquisadores não têm muito espaço para acompanhar os trabalhos feitos em alto mar. E eles ficam nas bases por semanas, não é todo mundo que aguenta", conclui.
+
+            Por esses motivos, é difícil medir o impacto direto da extração de petróleo na vida marinha. No entanto, existem métodos. O PMP também busca analisar se os animais encontrados têm presença de óleo e determinar suas causas de morte com precisão, o que auxilia na tomada de decisão por parte do governo e das empresas. 
 
 actThree:
   title: 'III: A Solução'
