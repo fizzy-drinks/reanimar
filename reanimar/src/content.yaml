@@ -133,12 +133,6 @@ actOne:
               - ["Aves (albatrozes e pinguins)", 137, 148, 306]
               - ["Mamíferos (golfinhos, baleias e botos)", 165, 110, 208]
               - [Total, 1777, 1069, 1930]
-    -
-      title: O monitoramento das praias
-      content:
-        -
-          text: Rodrigo Valle, coordenador do Instituto Biopesca, comenta o processo de monitoramento das praias
-          audio: none for now
 
     - title: Volume de ocorrências por cidade
       content:

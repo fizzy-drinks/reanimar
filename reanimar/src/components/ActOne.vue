@@ -7,7 +7,12 @@
     ref='page'
   )
 
-  title-screen(:title='text.actTwo.title' linkTo='/causa')
+  title-screen(
+    :title='text.actTwo.title'
+    :caption='text.actTwo.caption'
+    :bg='require("../../static/act_ii.jpg")'
+    linkTo='/causa'
+  )
 
   back-button
 </template>

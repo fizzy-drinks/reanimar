@@ -6,6 +6,12 @@
     :chapter='frame'
   )
 
+  title-screen(
+    :title='text.actThree.title'
+    :caption='text.actThree.caption'
+    :bg='require("../../static/act_iii.jpg")'
+  )
+
   back-button
 </template>
 
