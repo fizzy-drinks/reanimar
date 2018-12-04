@@ -1,7 +1,7 @@
 <template>
   <iframe
-    width="560"
-    height="315"
+    :width="computedWidth"
+    :height="computedHeight"
     :src="youtubeUrl"
     frameborder="0"
     allow="autoplay; encrypted-media"
@@ -15,6 +15,12 @@ export default {
   computed: {
     youtubeUrl () {
       return `https://www.youtube.com/embed/${this.id}`
+    },
+    computedWidth () {
+      return window.innerWidth * 0.6
+    },
+    computedHeight () {
+      return this.computedWidth * (9 / 16)
     }
   }
 }
