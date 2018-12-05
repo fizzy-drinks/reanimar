@@ -24,7 +24,7 @@
     :title='text.actThree.title'
     :caption='text.actThree.caption'
     :bg='require("../../static/act_iii.jpg")'
-    linkTo='/solução'
+    linkTo='/solucao'
   )
 </template>
 

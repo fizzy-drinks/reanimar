@@ -19,7 +19,7 @@ export default new Router({
     { path: '/causa',
       name: 'A Causa',
       component: ActTwo },
-    { path: '/solução',
+    { path: '/solucao',
       name: 'A Solução',
       component: ActThree }
   ]
