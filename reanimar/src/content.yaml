@@ -12,6 +12,8 @@ standardStyles:
     bgColor: '#ffe4e4'
   blue: &style.blue
     bgColor: '#e4e4ff'
+  green: &style.green
+    bgColor: '#e4ffe4'
 
 standardCoords:
   Litoral: &coords.Litoral
@@ -430,9 +432,25 @@ actThree:
   frames:
     -
       title: Educação ambiental
+      style: *style.green
+      content:
+        -
+          picture:
+            src: /reanimar/reanimar/static/pescadores.jpg
+            legend: O [Projeto Pescador Amigo](http://www.biopesca.org.br/o_que_fazemos.htm#pa) foi uma iniciativa que criou vínculos entre os pescadores artesanais do Litoral Sul e as Unidades de Conservação
+          text: |
+            Muitos dos projetos atuantes na região da Baixada Santista contribuem para a educação ambiental com ações nas praias, escolas e áreas públicas.
+
+            De [parcerias entre o poder público e as universidades](http://www.santos.sp.gov.br/?q=content/lancadas-acoes-de-educacao-ambiental-em-santos) à [participação em diversos programas de conscientização](http://www.biopesca.org.br/o_que_fazemos.htm#ea) e a [produção a pesquisas acadêmicas](http://www.biopesca.org.br/o_que_fazemos.htm#pesquisas), vários órgãos fazem parte do esforço para espalhar o conhecimento sobre o meio ambiente.
+
+            "É extremamente necessário que mais pessoas participem, ou pelo menos não ajudem a destruir o meio ambiente", comenta Gabriela Silva, bióloga marinha que trabalha no Instituto Biopesca.
+
+
     -
       title: O PMP
     -
       title: A limpeza das praias
     -
       title: Como ajudar?
+    -
+      title: Galeria de fotos
