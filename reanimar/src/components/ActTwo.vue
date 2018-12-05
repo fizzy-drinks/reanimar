@@ -10,6 +10,7 @@
     :title='text.actThree.title'
     :caption='text.actThree.caption'
     :bg='require("../../static/act_iii.jpg")'
+    linkTo='/solução'
   )
 
   back-button
@@ -17,12 +18,13 @@
 
 <script>
 import TextManager from './TextManager'
+import TitleScreen from './TitleScreen'
 import TextScreen from './TextScreen'
 import BackButton from './BackButton'
 
 export default {
   name: 'ActTwo',
   mixins: [TextManager],
-  components: { TextScreen, BackButton }
+  components: { TitleScreen, TextScreen, BackButton }
 }
 </script>

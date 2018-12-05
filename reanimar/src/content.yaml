@@ -419,6 +419,7 @@ actTwo:
 
     -
       title: '"A Baía da Poluição"'
+      style: *style.blue
       content:
         -
           video: N85EShNnYT8
