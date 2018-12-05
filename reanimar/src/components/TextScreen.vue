@@ -13,7 +13,7 @@ section.screen(:style='customStyle')
             :alt='section.picture.alt'
             :src='section.picture.src'
           )
-          legend {{ section.picture.legend }}
+          legend(v-html='md(section.picture.legend)')
         p(v-if='section.text' v-html='md(section.text)')
       audio(v-if='section.audio' :src='section.audio' controls)
       youtube-video(v-if='section.video' :id='section.video')
