@@ -425,4 +425,13 @@ actTwo:
 
 actThree:
   title: 'III: A Solução'
-  caption: conteúdo em breve
+  caption: O que é feito para mudar a situação
+  frames:
+    -
+      title: Educação ambiental
+    -
+      title: O PMP
+    -
+      title: A limpeza das praias
+    -
+      title: Como ajudar?

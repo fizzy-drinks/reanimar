@@ -4,6 +4,7 @@ import Router from 'vue-router'
 const Home = () => import('@/components/Home')
 const ActOne = () => import('@/components/ActOne')
 const ActTwo = () => import('@/components/ActTwo')
+const ActThree = () => import('@/components/ActThree')
 
 Vue.use(Router)
 
@@ -17,6 +18,9 @@ export default new Router({
       component: ActOne },
     { path: '/causa',
       name: 'A Causa',
-      component: ActTwo }
+      component: ActTwo },
+    { path: '/solução',
+      name: 'A Solução',
+      component: ActThree }
   ]
 })
